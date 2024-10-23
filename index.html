@@ -28,7 +28,7 @@
             </div>
         </nav>
 
-        <div class="top-container" >
+        <div class="top-container">
             <div class="top-container-left">
                 <h1>Enjoy your<br>Delicious Meal</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, ipsa tempore. Optio magni consectetur
@@ -152,22 +152,23 @@
                     <div class="form">
                         <div class="form-row">
                             <div class="form-name">
-                                <input type="text" class="form-input" id="name" placeholder="Your Name">
+                                <input type="text" class="form-input" id="name" placeholder="Your Name" required>
                                 <label for="name">Your Name</label>
                             </div>
                             <div class="form-email">
-                                <input type="email" class="form-input" id="email" placeholder="Your Email">
+                                <input type="email" class="form-input" id="email" placeholder="Your Email" required>
                                 <label for="email">Your Email</label>
                             </div>
                         </div>
 
                         <div class="form-row">
                             <div class="form-date">
-                                <input type="text" class="form-input" placeholder="Date & Time">
+                                <input type="datetime-local" class="form-input" id="datetime" placeholder="Date & Time" required>
                                 <label for="datetime">Date & Time</label>
                             </div>
-                            <div class="form-select">
-                                <select class="form-option">
+                            
+                            <div class="form-select" >
+                                <select class="form-option" id="people" required>
                                     <option value="1">People 1</option>
                                     <option value="2">People 2</option>
                                     <option value="3">People 3</option>
@@ -177,14 +178,14 @@
                             </div>
                         </div>
 
-                        <div class="form-textarea">
+                        <div class="form-textarea" >
                             <textarea class="form-msg" placeholder="Special Request" id="message"
-                                style="height: 100px"></textarea>
+                                style="height: 60px"></textarea>
                             <label for="message">Special Request</label>
                         </div>
 
                         <div class="form-submit">
-                            <button class="form-btn" type="submit">Book Now</button>
+                            <button class="form-btn" id="submit" onclick="booking(event)">Book Now</button>
                         </div>
                     </div>
                 </form>
@@ -192,7 +193,7 @@
         </div>
 
         <div class="footer-container" id="contact">
-            <section >
+            <section>
                 <h2>Contact Us</h2>
                 <p>Address: 123 Food Street, Delicious City</p>
                 <p>Phone: (000) 000-0000</p>
@@ -200,8 +201,8 @@
             </section>
         </div>
     </div>
-        <script src="serviceWorker.js">
-                    if ('serviceWorker' in navigator) {
+    <script src="serviceWorker.js" >
+        if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
                 navigator.serviceWorker.register('/service-worker.js')
                     .then(registration => {
@@ -211,7 +212,8 @@
                     });
             });
         }
-        </script>
+    </script>
+    <script src="booking.js"></script>
 </body>
 
 </html>
