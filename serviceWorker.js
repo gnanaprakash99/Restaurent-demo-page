@@ -17,7 +17,6 @@ const assetsToCache = [
   '/img/icon-512x512.png'
 ];
 
-// Install Service Worker and Cache Assets
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(CACHE_NAME).then(cache => {
@@ -26,7 +25,6 @@ self.addEventListener('install', event => {
   );
 });
 
-// Fetch Assets from Cache when Offline
 self.addEventListener('fetch', event => {
   event.respondWith(
     caches.match(event.request).then(response => {
