@@ -21,5 +21,5 @@ This website features:
   
 ## Setup
 To run this project, download the files or clone the repository:
-git clone https://github.com/yourusername/restaurant-parallax.git
+git clone https://ajay1931.github.io/Restaurent-demo-page/
 Then, open index.html in your browser.
