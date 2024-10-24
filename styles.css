@@ -166,6 +166,10 @@ a {
         flex: 1;
     }
 
+    .top-container-left p{
+        text-align: start;
+    }
+
     .top-container-right {
         flex: 1;
         display: flex;
@@ -191,6 +195,7 @@ a {
 
     .top-container-left p {
         font-size: 0.9em;
+        text-align: start;
     }
 
     .top-container-left a {
@@ -210,6 +215,7 @@ a {
 
     .top-container-left p {
         font-size: 0.8em;
+        text-align: start;
     }
 
     .top-container-left a {
