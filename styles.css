@@ -127,6 +127,7 @@ a {
     flex: .5;
     align-items: center;
     justify-content: center;
+    user-select: none;
 }
 
 .top-container-right img {
