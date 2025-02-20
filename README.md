@@ -30,5 +30,5 @@ Service Workers are scripts that run in the background of a web application, sep
   
 ## Setup
 To run this project, download the files or clone the repository:
-git clone https://gnanaprakash99.github.io/Restaurent-demo-page/
+git clone https://gnanaprakash99.github.io/tasty-hub/
 Then, open index.html in your browser.
